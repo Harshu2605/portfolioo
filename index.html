@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Personal-portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+<div class="container">
+<nav>
+<img src="images/H1.png" class="logo">
+<ul>
+<li><a href="#header">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#accomplishments">Accomplishments</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="header-content">
+<div class="header-text">
+<h1>Hi, I'm <span>Harshini</span> katta</h1>
+<p>This is my official portfolio website<br>which shows my Details and Accomplishments..</p>
+</div>
+<div class="header-image">
+<img src="images/mainimg.png" alt="Your Image">
+</div>
+</div>
+</div>
+</div>
+<!------------about------------>
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="images/background.png">
+</div>
+<div class="about-col-2">
+<h1 class="sub-title">About Me</h1>
+<p>"I am Harshini Katta, currently pursuing a Bachelor's degree in Computer Science and Engineering. I possess a fervent passion for acquiring in-depth technical knowledge, coupled with a strong affinity for non-technical disciplines such as graphic design. One of my distinctive qualities is my unwavering commitment to exploring emerging technologies and novel information, both within the technical and <br>non-technical domains."</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+<ul>
+<li><span>HTML,CSS</span></li>
+<li><span>PYTHON</span></li>
+<li><span>C LANGUAGE</span></li>
+</ul>
+</div>
+<div class="tab-contents" id="experience">
+<p>I'm a Fresher</p>
+</div>
+<div class="tab-contents" id="education">
+<ul>
+<li><span>2023</span><br>PURSUING B.TECH from V.K.R,V.N.B & A.G.K College of Engineering<br></li>
+<li><span>2020</span><br>INTERMEDIATE from SRI CHAITANYA COLLEGE</li>
+<li><span>2018</span><br>RAVINDRA BHARATHI SCHOOL</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!---------Accomplishments------------------>
+<div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+<img src="images/acc.png">
+</div>
+<div class="about-col-2">
+<h1 class="sub-title">ACCOMPLISHMENTS</h1>
+<p>"I have earned a three-star rating on HackerRank, showcasing my proficiency in coding and problem-solving. Furthermore, I served as a coordinator for a technical quiz during our college festival, demonstrating my leadership and organizational skills. My internships have been diverse, encompassing both technical and non-technical roles, allowing me to gain a well-rounded experience. Additionally, I have pursued numerous certifications online, including a recent completion of the 'Introduction to Cloud Computing' course offered by IBM Cognitive Learning, further enhancing my skill set."</p>
+
+</div>
+</div>
+</div>
+</div>
+<!--------------------contact-------------------->
+<div id="contact">
+<div class="container">
+<div class="row">
+<div class="contact-left">
+<h1 class="sub-title">Contact Me</h1>
+<p>Contact me via email: <a href="mailto:harshiniikatta@gmail.com" class="email-link">
+<img src="images/mail.png" alt="Email Icon" class="email-icon">
+harshiniikatta@gmail.com
+</a></p>
+<p>Contact me via linked in: <a href="linkedin.com/in/harshini-katta-7b02b7284" class="email-link">
+<img src="images/linkedin.png" alt="LinkedIn Icon" class="email-icon">
+Harshini Katta
+</a></p>
+</div>
+
+<div class="social-icons">
+<a href=""><i class='linkedin-square' type='logo' color='#2f1bd2' ></i></a>
+</div>
+<a href="images/resume .pdf" download class="btn">Download CV</a>
+</div>
+<div class="contact-right">
+<form>
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email"required>
+<textarea name="Message" row="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">submit</button>
+</form>
+</div>
+
+</div>
+</div>
+<div class="copyright">
+<p>copyright @Harshini.Made with love</p>
+</div>
+</div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+for(tablink of tablinks){
+tablink.classList.remove("active-link");
+}
+for(tabcontent of tabcontents){
+tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+
+}
+
+
+</script>
+</body>
+</html>
